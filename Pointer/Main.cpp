@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-//#define POINTERS_BASICS
+#define POINTERS_BASICS
 
 void main()
 {
