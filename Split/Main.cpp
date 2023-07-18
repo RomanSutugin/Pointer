@@ -4,7 +4,7 @@ using namespace std;
 #define tab "\t"
 #define delimiter "\n----------------\n"
 
-void EVEN_ODD(int source[], int size, int*& even, int& evenSize, int*& odd, int& oddSize);
+void EVEN_ODD(int arr[], int size, int*& even, int& evenSize, int*& odd, int& oddSize);
 
 void main()
 {
@@ -47,13 +47,13 @@ void main()
 	delete[] oddArray;
 }
 
-void EVEN_ODD(int source[], int size, int*& even, int& evenSize, int*& odd, int& oddSize) 
+void EVEN_ODD(int arr[], int size, int*& even, int& evenSize, int*& odd, int& oddSize) 
 {
 	// Подсчитываем количество четных и нечетных элементов
 	evenSize = 0;
 	oddSize = 0;
 	for (int i = 0; i < size; i++) {
-		if (source[i] % 2 == 0) {
+		if (arr[i] % 2 == 0) {
 			evenSize++;
 		}
 		else {
@@ -68,12 +68,12 @@ void EVEN_ODD(int source[], int size, int*& even, int& evenSize, int*& odd, int&
 	int evenIndex = 0;
 	int oddIndex = 0;
 	for (int i = 0; i < size; i++) {
-		if (source[i] % 2 == 0) {
-			even[evenIndex] = source[i];
+		if (arr[i] % 2 == 0) {
+			even[evenIndex] = arr[i];
 			evenIndex++;
 		}
 		else {
-			odd[oddIndex] = source[i];
+			odd[oddIndex] = arr[i];
 			oddIndex++;
 		}
 	}
