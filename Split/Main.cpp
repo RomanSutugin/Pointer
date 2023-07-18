@@ -35,13 +35,13 @@ void main()
 
 	cout << "Массив четных чисел: ";
 	for (int i = 0; i < evenSize; i++) {
-		std::cout << evenArray[i] << " ";
+	cout << evenArray[i] << " ";
 	}
-	std::cout << std::endl;
+	cout << std::endl;
 
-	std::cout << "Массив нечетных чисел: ";
+	cout << "Массив нечетных чисел: ";
 	for (int i = 0; i < oddSize; i++) {
-		std::cout << oddArray[i] << " ";
+	cout << oddArray[i] << " ";
 	}
 	delete[] evenArray;
 	delete[] oddArray;
